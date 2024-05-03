@@ -10,6 +10,11 @@ config CMDLINE
 	  Various commands and command categorys can be indivdually enabled.
 	  Depending on the number of commands enabled, this can add
 	  substantially to the size of U-Boot.
+	  
+config CMD_FILEENV
+	bool "fileenv"
+	help
+	   Read a file into memory and store it to env.
 
 config HUSH_PARSER
 	bool "Use hush shell"
